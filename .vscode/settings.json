@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/voloshynb/Downloads/selenium-java-4.19.1/**/*.jar",
+        "/Users/voloshynb/Desktop/selenium-java-4/**/*.jar",
+        "/Users/voloshynb/Documents/For-Testing/**/*.jar"
+    ]
+}
