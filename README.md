@@ -1,18 +1,52 @@
-## Getting Started
+# Automated Testing with Selenium
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This project demonstrates automated testing of a web application using Selenium WebDriver in Java. The application under test is [Advantage Online Shopping](https://www.advantageonlineshopping.com/#/), and the test cases cover login, product search, and product detail functionalities.
 
-## Folder Structure
+## Prerequisites
 
-The workspace contains two folders by default, where:
+Before running the tests, ensure you have the following prerequisites installed:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Java Development Kit (JDK)
+- Selenium WebDriver
+- ChromeDriver (or other compatible WebDriver for your browser)
+  
+## Setup
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. Clone this repository to your local machine.
+2. Download and install the ChromeDriver (or WebDriver for your preferred browser).
+3. Set the system property for the WebDriver executable in the `Main` class. Example:
+   ```java
+   System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver");
+   ```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Running the Tests
 
-## Dependency Management
+To run the automated tests:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+1. Open the project in your Java IDE.
+2. Navigate to the `Main` class.
+3. Run the `main` method.
+4. The tests will execute sequentially, performing login, product search, and product detail actions.
+
+## Test Cases
+
+The test cases covered in this project are:
+
+1. **Login Test**: Validates the login functionality.
+2. **Product Search Test**: Searches for a product and verifies the search results.
+3. **Product Detail Test**: Selects a product, increases its quantity, and adds it to the cart.
+
+## Project Structure
+
+The project consists of the following Java files:
+
+- **LoginPage.java**: Contains methods and locators for the login page.
+- **Main.java**: Entry point of the program where WebDriver is initialized, and test cases are executed.
+- **ProductSearchPage.java**: Contains methods and locators for the product search page.
+- **ProductDetailPage.java**: Contains methods and locators for the product detail page.
+
+## Contributors
+
+- [Voloshynb](https://github.com/Voloshynb)
+
+---
